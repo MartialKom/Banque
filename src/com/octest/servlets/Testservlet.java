@@ -34,8 +34,8 @@ public class Testservlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
 		
-		  //Threade t= new Threade(); 
-		  //new Thread(t).start();
+		  Threade t= new Threade(); 
+		  new Thread(t).start();
 	
 	
 String nom=(String)request.getParameter("nom");
