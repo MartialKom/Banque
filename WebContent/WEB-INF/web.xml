@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+ 
+  
+  <display-name>Projet2</display-name>
+  <welcome-file-list>
+    <welcome-file>Authentification.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>Testservlet</servlet-name>
+  <servlet-class>com.octest.servlets.Testservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Testservlet</servlet-name>
+  <url-pattern>/monlien</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>Servlet2</servlet-name>
+  <servlet-class>com.octest.servlets.Servlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Servlet2</servlet-name>
+  <url-pattern>/Admin</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+ <servlet-name>Operation</servlet-name>
+ <servlet-class>com.octest.servlets.Operation</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>Operation</servlet-name>
+ <url-pattern>/operation</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+  <servlet-name>Client</servlet-name>
+  <servlet-class>com.octest.servlets.Client</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Client</servlet-name>
+  <url-pattern>/client</url-pattern>
+  </servlet-mapping>
+ 
+</web-app>
